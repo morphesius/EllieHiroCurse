@@ -59,9 +59,13 @@
 			if(evt.target.className.includes("target")){
 				let targetType = evt.target.className.includes("blue")?"blue":"green";
 				console.log("TBD: here's where something needs to happen based on targetType",targetType);
-				console.log("hit blue");
-				if(targetType ==
-				extinguishFlame();
+				//console.log("hit blue");
+				if(targetType == "blue"){
+					extinguishFlame();
+				}
+				elseif(targetType == "green"){
+					flameFactory(idx,scene)
+				}
 			
 				
 				
