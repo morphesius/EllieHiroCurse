@@ -72,10 +72,16 @@
 				if(number === 0){
 					console.log("Lose")
 					window.alert("Lose")
+					flameFactory(idx,scene)
+					number = 1
 				}
 				if(number > 10){
 					console.log("Win")
 					window.alert("Win")
+					for(let i = 0; i < number; i++)){
+						extinguishFlame();
+					}
+					number = 1
 				}
 			
 				
