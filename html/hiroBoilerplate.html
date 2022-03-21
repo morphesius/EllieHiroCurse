@@ -55,11 +55,11 @@
 		});
 		
 		function processEvent(evt){//two events are generated...one each for the two entities that collided
-			console.log(evt.type, evt.srcElement.id, evt.target.id, evt.target.className);      
+			//console.log(evt.type, evt.srcElement.id, evt.target.id, evt.target.className);      
 			//filter response using the target.className
 			if(evt.target.className.includes("target")){
 				let targetType = evt.target.className.includes("blue")?"blue":"green";
-				console.log("TBD: here's where something needs to happen based on targetType",targetType);
+				//console.log("TBD: here's where something needs to happen based on targetType",targetType);
 				//console.log("hit blue");
 				if(targetType === 'blue'){
 					extinguishFlame();
