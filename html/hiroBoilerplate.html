@@ -61,7 +61,7 @@
 				let targetType = evt.target.className.includes("blue")?"blue":"green";
 				//TBD: here's where something needs to happen based on targetType",targetType
 				//hit blue
-				console.log("hello")
+				
 				if(targetType === 'blue'){
 					extinguishFlame();
 					number = number - 1
@@ -81,9 +81,8 @@
 					console.log("Win")
 					window.alert("Win")
 					number = 1
-					for(let i = 0; i < 11; i++)){
-						extinguishFlame();
-						console.log("ex")
+					while(scene.children.length > 0){ 
+   						scene.remove(scene.children[0]); 
 					}
 					
 				}
