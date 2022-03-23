@@ -72,14 +72,14 @@
 				}
 				if(number === 0){
 					console.log("Lose")
-					window.alert("Lose")
+					window.alert("You Win - Game will restart with one pair.")
 					number = 1
 					flameFactory(idx,scene)
 					
 				}
 				if(number > 10){
 					console.log("Win")
-					window.alert("Win")
+					window.alert("You Lose - Game will restart with one pair.")
 					while(number > 1){
 						extinguishFlame();
 						number = number - 1
