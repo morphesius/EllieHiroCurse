@@ -59,8 +59,6 @@
 			//filter response using the target.className
 			if(evt.target.className.includes("target")){
 				let targetType = evt.target.className.includes("blue")?"blue":"green";
-				//TBD: here's where something needs to happen based on targetType",targetType
-				//hit blue
 				
 				if(targetType === 'blue'){
 					extinguishFlame();
@@ -85,14 +83,9 @@
 						number = number - 1
 						console.log(number)
 					}
-					//window.alert("Win")
-					//number = 5
 
 				}
-			
-		//while(scene.children.length > 0) 
-   		//				scene.remove(scene.children[0]); 
-		//					
+					
 				
 		//if touch green, add new pair with flame factory
 		//if touch blue, random pair removed with extinguish Flame
